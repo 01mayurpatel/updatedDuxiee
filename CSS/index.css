@@ -1,0 +1,243 @@
+.top-left-code{
+  
+    border: 1px solid rgba(128, 128, 128, 0.29);
+    border-radius: 5px;
+    position: relative;
+}
+.top-left-code p{
+    color: rgba(180, 181, 180, 0.749);
+    
+}
+.top-left-code code{
+    font-size: 20px;
+    color:#7FEE64;
+
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.copy-tag{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    visibility: hidden;
+    color: rgba(180, 181, 180, 0.749);
+    border: 1px solid rgba(180, 181, 180, 0.311);
+    border-radius: 5px;
+    font-size: 11px;
+}
+.check-tag{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    visibility: hidden;
+    color: rgba(53, 255, 53, 0.749);
+    border: 1px solid rgba(180, 181, 180, 0.311);
+    border-radius: 5px;
+    font-size: 11px;
+}
+.top-left-code:hover{
+    .copy-tag{
+
+        visibility: visible;
+   
+    }
+}
+.copy-tag:hover{
+    cursor: pointer;
+    color: rgba(197, 197, 197, 0.863);
+}
+.top-right-code{
+    border: 1px solid rgba(128, 128, 128, 0.29);
+    border-radius: 10px;
+}
+.top-right-code-first {
+    background-color: rgba(99, 117, 85, 0.884);
+    
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.top-right-code-first span{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    
+}
+.first-circle{
+    
+    background-color: red;
+}
+.second-circle{
+    background-color: yellow;
+}
+.third-circle{
+    background-color: green;
+}
+
+.top-right-code-second{
+
+}
+
+
+
+.needs{
+    border: 1px solid   rgba(205, 205, 205, 0.329);
+    border-radius: 7px;
+    background-color: rgba(59, 59, 59, 0.078);
+    background-image: url(https://modal.com/_app/immutable/assets/landing-bg-boxes.e85cba64.svg);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+.needs i{
+    font-size: 21px;
+}
+
+
+.costs-table{
+    border: 1px solid   rgba(205, 205, 205, 0.329);
+    border-radius: 7px;
+    background-color: rgba(96, 95, 95, 0.078);
+}
+.cost-l2 p{
+    font-size: 18px;
+}
+.cost-list{
+    position: relative;
+}
+.button-l1{
+    position: absolute;
+    right: 0%;
+}
+.button-l2{
+    position: absolute;
+    right: 0%;
+    visibility: hidden;
+}
+.toggle-button{
+    border: 1px solid   rgba(205, 205, 205, 0.329);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.toggle-button div{
+    display: inline-block;
+    border-radius: 10px;
+}
+.toggle-left{
+    border: 1px solid  rgba(53, 255, 53, 0.749);
+    color: rgba(53, 255, 53, 0.749);
+    background-color: rgba(53, 255, 53, 0.068);
+   
+}
+
+
+
+.bottom-logo div img{
+    width: 300px;
+    animation: bt-logo 3s ease-in-out infinite;
+}
+
+.chart-box{
+    border: 1px solid rgba(128, 128, 128, 0.29);
+    padding-bottom: 38px;
+    border-radius: 10px;
+    
+}
+.chart-main{
+    background-image: url('../Assets/final_chart.png');
+    background-size:cover;
+    background-position-y: top;
+    
+    overflow: hidden;
+    background-position: left;
+    background-repeat: no-repeat;
+    animation: bg-img 50s linear infinite ;
+    /* background-color: red; */
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+
+}
+table th,
+table td {
+  padding: 10px; /* Add your desired padding values here */
+  
+}
+.table-top{
+    
+   
+}
+.table-top1{
+    overflow: hidden;
+    border-radius: 10px; 
+    border: 1px solid rgba(128, 128, 128, 0.29);
+}
+#table-t3-s, #table-t1-s, #table-t2-s{
+    background-color: rgba(0, 255, 76, 0.306);
+   margin-top: 2px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.table-row:hover {
+    background-color: rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+}
+
+@media (max-width:610px) {
+    .table-flex-set{
+        display: block !important;
+    }
+    p{
+        font-size: 14px;
+    }
+    .button-l1{
+        font-size: 13px !important;
+    }
+    .button-l2{
+        font-size: 13px !important;
+    }
+    .toggle-button{
+        width: fit-content;
+    }
+    .box-div1{
+        height: 120px !important;
+        padding-bottom: 0% !important;
+        border-radius: 10px;
+    }
+    .chart-box{
+        padding-bottom: 32px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #table-t3-s, #table-t1-s, #table-t2-s{
+        background-color: rgba(0, 255, 76, 0.306);
+   
+    
+    border-radius: 10px;
+    }
+}
+
+@keyframes bt-logo {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bg-img {
+    0% {background-position:    left;}
+    100%{ background-position: right;}
+}
+

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/favicon.png" />
+    <title>Duxiee</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="nav-div px-3">
+        <div class="nav-box px-0">
+            <div>
+                <nav class="navbar navbar-dark pb-0 pt-0 navbar-expand-lg ">
+
+                    <a class="navbar-brand text-light pb-0 mb-0" href="index.html"><img class="nav-logo" src="Assets/duxiee.png"
+                            alt="">DUXIEE</a>
+                    <button class="navbar-toggler  text-light" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class=" navbar-nav ml-auto">
+
+                            <li class="nav-item dropdown px-2 ">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Use Cases
+                                </a>
+                                <div class="dropdown-menu  " aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item  text-light" href="#"><img class="mr-3"
+                                            src="Assets/pic1.svg"
+                                            alt=""> Model Inference</a>
+                                    <a class="dropdown-item text-light ml-4" href="language.html"><i
+                                            class="fa fa-arrow-right mr-3"></i>Language Models</a>
+                                    <a class="dropdown-item text-light ml-4" href="image.html"><i
+                                            class="fa fa-arrow-right mr-3"></i>Image, Video & 3D</a>
+                                    <a class="dropdown-item text-light ml-4" href="audio.html"><i
+                                            class="fa fa-arrow-right mr-3"></i>Audio</a>
+                                    <a class="dropdown-item  text-light" href="fine_tuning.html"><i
+                                            class="fa fa-sliders mr-3"></i> Fine Tuning</a>
+                                    <a class="dropdown-item  text-light" href="job.html"><i class="fa fa-sort mr-3"></i>
+                                        Job Queues & Batch Processing</a>
+                                    <a class="dropdown-item  text-light" href="sandboxed.html"><i
+                                            class="fa fa-terminal mr-3"></i>Sandboxed Code Execution</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-light" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-light" href="#">Docs</a>
+                            </li>
+
+
+
+                        </ul>
+                        <form class="form-inline nav-socials my-2 my-lg-0">
+                            <i class="fa-brands px-2 fa-x-twitter"></i>
+                            <i class="fa-brands px-2 fa-telegram"></i>
+                            <i class="fa-brands px-2 fa-medium"></i>
+                            
+
+
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <div class="box-mains pt-5">
+        <div class="mt-5 pt-3">
+            <div class="col-md-12 mt-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p class="big-font">Cloud functions reimagined</p>
+                        <p>Run generative AI models, large-scale batch jobs, job queues, and much more.</p>
+                        <p>Bring your own code — we run the infrastructure.</p>
+                        <div class="col-md-12 pt-3">
+                            <div class="row">
+                                <div class="top-left-code col-lg-10 col-md-10 col-sm-12 p-3 ">
+                                    <p class="px-2">$<code class="pl-3 " id="text1">pip install duxiee</code></p>
+                                    <p class="px-2">$<code class="pl-3 " id="text2">python3 -m duxiee setup</code></p>
+                                    <div class="copy-tag " onclick="func()">
+                                        <i class="fa fa-copy fa-2x m-2"></i>
+
+                                    </div>
+                                    <div class="check-tag " onclick="func()">
+                                        <i class="fa fa-check fa-2x m-2"></i>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 px-4 mt-2">
+                        <div class="top-right-code">
+                            <div class="top-right-code-first p-2">
+                                <span class="first-circle mx-2"></span>
+                                <span class="second-circle  mx-2"></span>
+                                <span class="third-circle mx-2"></span>
+                            </div>
+                            <div class="top-right-code-second p-3">
+                                <p class="px-2 mb-0"><code class="wl-code"> 1</code><code
+                                        class="pl-3 "><code class="c-blue">import</code> <code
+                                        class="w-code">duxiee</code></code></p>
+                                <p class="px-2 mb-0"><code class="wl-code"> 2</code></p>
+                                <p class="px-2 mb-0"><code class="wl-code"> 3</code><code
+                                        class="pl-3 "><code class="w-code">stub = duxiee.Stub()</code></code></p>
+                                <p class="px-2 mb-0"><code class="wl-code">4</code></p>
+                                <p class="px-2 mb-0"><code class="wl-code">5</code><code
+                                        class="wl-code pl-3">@stub.function()</code></p>
+                                <p class="px-2 mb-0"><code class="wl-code">6</code><code
+                                        class="pl-3 "><code class="c-blue">def</code> <code
+                                        class="o-code">hello(): </code></code></p>
+                                <p class="px-2 mb-0"><code class="wl-code">7</code><code
+                                        class="pl-5 "><code>print</code><code class="w-code">(</code> <code
+                                        class="o-code ">"Running remotely on duxiee!" </code> <code
+                                        class="w-code">)</code></code></p>
+
+
+                            </div>
+                        </div>
+                        <div class="top-right-code mt-4">
+                            <div class="top-right-code-first p-2">
+                                <span class="first-circle mx-2"></span>
+                                <span class="second-circle  mx-2"></span>
+                                <span class="third-circle mx-2"></span>
+                            </div>
+                            <div class="top-right-code-second p-3">
+                                <p class="px-2 mb-0"><code class="g-code">></code><code
+                                        class="pl-3 "><code class="g-code">duxiee run hello.py</code></code></p>
+                                <p class="px-2 mb-0"><code class="g-code">✓</code><code
+                                        class="pl-3 wd-code">Initialized.</code></p>
+                                <p class="px-2 mb-0"><code class="g-code">✓</code><code
+                                        class="pl-3 wd-code">Created objects.</code></p>
+
+                                <p class="px-2 mb-0"><code class="wd-code">├──</code><code
+                                        class="pl-1 wd-code">🔨 Created hello.</code></p>
+                                <p class="px-2 mb-0"><code class="wd-code">└──</code><code
+                                        class="pl-1 wd-code">🔨 Mounted ./hello.py.</code></p>
+                                <p class="px-2 mb-0"><code class="c-blue">Running remotely on duxiee!</code></p>
+                                <p class="px-2 mb-0"><code class="g-code">✓</code><code
+                                        class="pl-3 wd-code"> App completed.</code></p>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-mains pt-5">
+        <div class="mt-5 pt-3">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12 pr-5 pt-2 pb-1">
+                        <p class="mid-font">Engineered for large-scale workloads</p>
+                        <p>We built a container system from scratch in Rust for the fastest cold-start times. Scale to
+                            hundreds of GPUs and back down to zero in seconds, and pay only for what you use.</p>
+                    </div>
+                    <div class="col-lg-7 chart-box col-md-7 col-sm-12 px-0">
+                        <div class="box-div1  h-100">
+                            <div class="top-right-code-first px-3 pt-2 pb-1">
+                                <p class="pb-0 mb-0"> GPU Containers</p>
+                            </div>
+                            <div class="chart-main">
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-mains  pt-5">
+        <div class="mt-5 pt-3">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <div class="h-100 table-top1 ">
+
+
+                            <table class="w-100 table-top">
+                                <div>
+                                    <tr class="top-right-code-first">
+                                        <th>Enqueued</th>
+                                        <th >
+                                            Startup</th>
+                                        <th id="exec">
+                                            Execution</th>
+                                        <th id="table-t">
+                                            Status</th>
+                                    </tr>
+                                </div>
+                                <tr class="table-row">
+                                    <td>12:53:15 PM</td>
+                                    <td id="table-t1">0.0s</td>
+                                    <td id="table-t1-t">0.0</td>
+                                    <td ><p class="mb-0 pb-0" id="table-t1-s">Successful</p></td>
+                                </tr>
+                                <tr  class="table-row">
+                                    <td>12:53:15 PM</td>
+                                    <td id="table-t2">0.0s</td>
+                                    <td id="table-t2-t">0.0</td>
+                                    <td ><p class="mb-0 pb-0" id="table-t2-s">Successful</p></td>
+                                </tr>
+                                <tr  class="table-row">
+                                    <td>12:53:15 PM</td>
+                                    <td id="table-t3">0.0s</td>
+                                    <td id="table-t3-t">0.0</td>
+                                    <td ><p class="mb-0 pb-0" id="table-t3-s">Successful</p></td>
+                                </tr>
+                                
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 px-4 mt-2">
+
+                        <p class="mid-font">Iterate at the speed of thought</p>
+                        <p>Deploy functions to the cloud in seconds, with custom container images and hardware
+                            requirements. Never write a single line of YAML.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line-box mt-5">
+        <div class="line"></div>
+    </div>
+    <div class="mt-3 box-mains ">
+        <div class="text-center">
+            <p class="mid-font">Everything your app needs</p>
+        </div>
+        <div class="mt-5 pt-3">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-1 px-2 ">
+                        <div class="needs p-3 px-4 pb-5 mb-2 h-100">
+                            <span></span>
+                            <span class="midl-font p-2"><i class="fa-brands fa-codepen mr-3"></i>Environments</span>
+                            <p class="para-l mt-3">Express <span class="under">container images</span> and <span
+                                    class="under">hardware specifications</span> entirely in code.</p>
+                            <p class="para-l">Say goodbye to Dockerfiles and YAML.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-1 px-2">
+                        <div class="needs pt-3  px-4 pb-4  mb-2 h-100">
+                            <span><i class="fa fa-database"></i></span>
+                            <span class="midl-font p-2">Storage</span>
+                            <p class="para-l mt-3">Provision <span class="under">network volumes, key-value
+                                    stores</span> and <span class="under"> queues</span> with ease.</p>
+                            <p class="para-l">Use powerful cloud primitives that feel like regular Python.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-1 px-2 ">
+                        <div class="needs pt-3  px-4 pb-4 mb-2 h-100">
+                            <span><i class="fa fa-clock"></i></span>
+                            <span class="midl-font p-2">Job scheduling</span>
+                            <p class="para-l mt-3">Turn functions into<span class="under">cron jobs</span> with a single
+                                line of code.</p>
+                            <p class="para-l"><span class="under">Spawn compute intensive jobs</span> without blocking
+                                your backend.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-1 px-2 ">
+                        <div class="needs p-3 px-4 pb-5 mb-2 h-100">
+                            <span><i class="fa fa-globe"></i></span>
+                            <span class="midl-font p-2">Web endpoints</span>
+                            <p class="para-l mt-3">Serve any function as an<span class="under"> HTTPS endpoint.</span>
+                            </p>
+                            <p class="para-l">Ship to your own <span class="under">custom domains.</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-1 px-2">
+                        <div class="needs pt-3  px-4 pb-4 mb-2 h-100" >
+                            <span><i class="fa fa-chart-line"></i></span>
+                            <span class="midl-font p-2">Observability</span>
+                            <p class="para-l mt-3">Monitor executions, logs and metrics in real time.</p>
+                            <p class="para-l">Debug interactively with <span class="under">duxiee shell.</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-1 px-2">
+                        <div class="needs pt-3  px-4 pb-4 mb-2 h-100">
+                            <span><i class="fa fa-shield"></i></span>
+                            <span class="midl-font p-2">Security</span>
+                            <p class="para-l mt-3">Secure your workloads with our battle-tested gVisor runtime.</p>
+                            <p class="para-l"><span class="under">Industry-standard SOC 2 compliance.</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-mains pt-5">
+        <div class="mt-5 pt-3">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-6  col-md-6 col-sm-12 pr-5">
+                        <div class=" h-100  d-flex d-flex flex-column justify-content-center">
+                            <p class="mid-font">Only pay for what you use</p>
+                            <p>Scale up to hundreds of nodes and down to zero within seconds. Pay for actual compute, by
+                                the CPU cycle. With $30 of compute on us, every month.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 px-4 mt-2">
+                        <div class="costs-table p-3">
+                            <div class="d-flex justify-content-between table-flex-set">
+                                <p class="midl-font">Compute costs</p>
+                                <div class="toggle-button m-4">
+                                    <div class="toggle-left px-2" onclick="togLeft()">per second</div>
+                                    <div class="toggle-right px-2" onclick="togRight()">per hour</div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between cost-l2 mt-2 mb-2 cost-list">
+                                <p class="wd-code">Compute costs</p>
+                                <p class="button-l1 pt-1">$0.0000533<span class="wl-code"> / core / sec</span></p>
+                                <p class="button-l2">$0.192<span class="wl-code"> / core / h</span></p>
+                            </div>
+                            <div class=" cost-l2 ">
+                                <p class="wd-code">GPU</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between cost-l2 mt-2  cost-list">
+                                <p class="wd-code">Nvidia A100, 40 GB</p>
+                                <p class="button-l1">$0.001036<span class="wl-code">/ sec</span></p>
+                                <p class="button-l2">$3.73 <span class="wl-code">/ h</span></p>
+                            </div>
+                            <div class="d-flex justify-content-between cost-l2  cost-list">
+                                <p class="wd-code">Nvidia A100, 80 GB</p>
+                                <p class="button-l1">$0.001553<span class="wl-code">/ sec</span></p>
+                                <p class="button-l2">$5.59<span class="wl-code">/ h</span></p>
+                            </div>
+                            <div class="d-flex justify-content-between cost-l2  cost-list">
+                                <p class="wd-code">Nvidia A10G</p>
+                                <p class="button-l1">$0.000306<span class="wl-code">/ sec</span></p>
+                                <p class="button-l2">$1.10 <span class="wl-code">/ h</span></p>
+                            </div>
+                            <div class="d-flex justify-content-between cost-l2  cost-list">
+                                <p class="wd-code">Nvidia L4</p>
+                                <p class="button-l1">$0.000291<span class="wl-code">/ sec</span></p>
+                                <p class="button-l2">$1.05 <span class="wl-code">/ h</span></p>
+                            </div>
+                            <div class="d-flex justify-content-between cost-l2  cost-list">
+                                <p class="wd-code">Nvidia T4</p>
+                                <p class="button-l1">$0.000164 <span class="wl-code">/ sec</span></p>
+                                <p class="button-l2">$0.59 <span class="wl-code">/ h</span></p>
+                            </div>
+                            <div class="d-flex justify-content-between cost-l2 mt-2 mb-2 cost-list">
+                                <p class="wd-code">Memory
+
+                                </p>
+                                <p class="button-l1">$0.00000667<span class="wl-code"> / GIB/ sec</span></p>
+                                <p class="button-l2">$0.024<span class="wl-code"> / GIB / h</span></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom-logo mt-5">
+        <div class="text-center">
+            <img src="Assets/duxiee.png" alt="">
+            <p class="mid-font">Ship your first app in minutes</p>
+        </div>
+
+    </div>
+    <div class="line-box">
+        <div class="line"></div>
+    </div>
+    <div class="foot text-center p-5">
+                            <i class="fa-brands px-2 fa-x-twitter"></i>
+                            <i class="fa-brands px-2 fa-telegram"></i>
+                            <i class="fa-brands px-2 fa-medium"></i>
+
+    </div>
+</body>
+<script src="JS/global.js"></script>
+<script src="JS/index.js"></script>
+<!-- <script src="https://kit.fontawesome.com/3f0e8dbe51.js" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>

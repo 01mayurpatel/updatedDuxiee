@@ -1,0 +1,93 @@
+.top-heading{
+    background-image: url('https://modal.com/_app/immutable/assets/model-inference-big.76560b78.svg');
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: bottom;
+
+    
+}
+.box-mains{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.boxes{
+    border: 1px solid   rgba(205, 205, 205, 0.329);
+    background-color: rgba(59, 59, 59, 0.16);
+    border-radius: 5px;
+   
+}
+
+
+.copy-tag{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+   
+    color: rgba(180, 181, 180, 0.749);
+    border: 1px solid rgba(180, 181, 180, 0.311);
+    border-radius: 5px;
+    font-size: 8px;
+    cursor: pointer;
+}
+.check-tag{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    visibility: hidden;
+    color: rgba(53, 255, 53, 0.749);
+    border: 1px solid rgba(180, 181, 180, 0.311);
+    border-radius: 5px;
+    font-size: 8px;
+    cursor: pointer;
+}
+.top-right-code-first {
+    background-color: rgba(99, 117, 85, 0.884);
+    
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.chart-box{
+    border: 1px solid rgba(128, 128, 128, 0.29);
+    padding-bottom: 38px;
+    border-radius: 10px;
+}
+.chart-main{
+    background-image: url('../Assets/final_chart.png');
+    background-size:cover;
+    background-position-y: top;
+    
+    overflow: hidden;
+    background-position: left;
+    background-repeat: no-repeat;
+    animation: bg-img 30s  infinite linear;
+    /* background-color: red; */
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+
+}
+@media (max-width:610px) {
+    .box-mains{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0 ;
+    }
+    .top-heading{
+        background-image: none;
+    }
+    .box-div1{
+        
+        padding-bottom: 0% !important;
+        border-radius: 10px;
+    }
+    .chart-box{
+        height: 170px !important;
+    }
+    
+}
+@keyframes bg-img {
+    0% {background-position:    left;}
+    100%{ background-position: right;}
+}

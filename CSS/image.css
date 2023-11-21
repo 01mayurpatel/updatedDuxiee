@@ -1,0 +1,64 @@
+.top-heading{
+    background-image: url('https://modal.com/_app/immutable/assets/model-inference-big.76560b78.svg');
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: bottom;
+
+    
+}
+.box-mains{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.box1{
+    padding-left: 21px;
+    padding-right: 21px;
+}
+.boxes{
+    border: 1px solid   rgba(205, 205, 205, 0.329);
+    background-color: rgba(59, 59, 59, 0.16);
+    border-radius: 5px;
+   
+}
+.code-back{
+    background-color: rgba(0, 0, 0, 0.201);
+    border-radius: 8px;
+    position: relative;
+}
+
+.copy-tag{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+   
+    color: rgba(180, 181, 180, 0.749);
+    border: 1px solid rgba(180, 181, 180, 0.311);
+    border-radius: 5px;
+    font-size: 8px;
+    cursor: pointer;
+}
+.check-tag{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    visibility: hidden;
+    color: rgba(53, 255, 53, 0.749);
+    border: 1px solid rgba(180, 181, 180, 0.311);
+    border-radius: 5px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+@media (max-width:610px) {
+    .box-mains,.box1{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0 ;
+    }
+    .top-heading{
+        background-image: none;
+    }
+    
+    
+}
